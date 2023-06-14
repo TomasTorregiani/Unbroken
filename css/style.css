@@ -1,0 +1,144 @@
+/*font-family: 'Pangolin', cursive;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+body {
+    background-size: cover;
+}
+/*propiedades de index*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+header h1 {
+    font-family: 'Pangolin', cursive;
+    font-weight:bolder;
+    font-size: 500%;
+    margin: 0px;
+}
+.ul-nav{
+    display: flex;
+    justify-content: right;
+}
+ul li{
+    padding: 15px;
+    list-style-type: none;
+}
+a:hover{
+    color: red;
+    background-color: black;
+    font-weight: bolder;
+}
+#h2-index{  
+    font-family:fantasy;
+    font-size: 500%;
+    text-align: center;
+    height: 150px;
+    color: red;
+    margin-bottom: 0px;
+}
+#div-index1{
+    grid-area: ropa1;
+}
+#div-index2{
+    grid-area: ropa2;
+}
+#div-index3{
+    grid-area: ropa3;
+}
+#section-index{
+    grid-area: texto;
+}
+#main-index section p{
+    width: 100%;
+}
+#main-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas:
+    "ropa1 ropa2 ropa3"
+    "texto texto texto";
+}
+div a h3{
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif; 
+    padding: 15px 150px;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 30px;
+}
+/*propiedades preguntas frecuentes*/
+#p-preguntas h2{
+    height: 65px;
+    font-size: 40px;   
+    text-align: left;
+    padding: 30px;
+} 
+.main-preguntas, .main-contacto {
+    background-color: rgba(205, 150, 129, 0.822)
+}
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: aliceblue ;
+    background-color: rgb(80, 80, 196);
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+}
+.footer-div {
+    padding: 10px;
+    font-size: 20px;
+    border:solid 2px white;
+    background-color: black;
+}
+.font-white{ 
+    color: white;
+    font-size: 30px;
+}
+.h2-contacto{
+    display: flex;
+    
+}
+#main-contacto p{
+    margin: 20px;
+    padding: 20px;
+    
+}
+.li-hombre {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    list-style-type: none;
+}
+.h3-hombre{
+    color: red;
+    text-align: center;
+    font-size: 60px;
+}
+.div-hombre{
+    display: flex;
+    justify-content: space-around;
+}
+#div-remeras{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+img:not(header img){
+   position:relative;
+   left: 180px;
+}
+/*propiedades ropa hombre*/
+
+
+
+
