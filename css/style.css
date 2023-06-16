@@ -22,6 +22,10 @@ header h1 {
     font-size: 500%;
     margin: 0px;
 }
+h1 ::first-letter {
+    font-weight: bolder;
+    color: red;
+}
 .ul-nav{
     display: flex;
     justify-content: right;
