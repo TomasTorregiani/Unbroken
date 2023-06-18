@@ -23,6 +23,10 @@ header h1 {
     margin: 0px;
 
 }
+h1::first-letter {
+    font-weight: bolder;
+    color: red;
+}
 .ul-nav{
     display: flex;
     justify-content: right;
@@ -143,7 +147,68 @@ img:not(header img){
     text-align: center;
     font-size: 60px;
 }
+/*media queries - index*/
+@media (max-width: 575px){
+    header h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    header{      
+        flex-direction: column;    
+    }
+    .ul-nav{
+        font-size: 12px;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    #h2-index{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 300% ;
+        height: 40px;
+    } 
+    #main-index { 
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: left;
+    }
 
+    #section-index {
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        padding: 10px; 
+    }
+    .footer-div{
+        padding: 0;
+        font-size: 15px;
+        width: 20%;
+    }
+    
+}   
+/*media queries - hombre*/
+@media (max-width: 575px){
+    iframe{
+        width: 400px;
+        height: 250px;     
+    }
+    .div-hombre{
+        flex-direction: column;
+    }
+    .h3-hombre{
+        color: white;
+        font-size: 40px;
+    }
+    .font-white{ 
+        font-size: 20px;
+    }
+    .li-hombre {  
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 
 
