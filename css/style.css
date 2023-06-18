@@ -206,5 +206,6 @@ img:not(header img){
         font-size: 20px;
         display: flex;
         flex-wrap: wrap;
+    }
 }
 
