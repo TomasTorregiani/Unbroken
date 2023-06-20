@@ -69,6 +69,7 @@ a:hover{
     grid-template-areas:
     "ropa1 ropa2 ropa3"
     "texto texto texto";
+    gap: 150px;
 }
 div a h3{
     color:white;
@@ -78,6 +79,7 @@ div a h3{
     text-align: left;
     font-size: 30px;
 }
+
 /*propiedades preguntas frecuentes*/
 #p-preguntas h2{
     height: 65px;
@@ -122,10 +124,7 @@ footer {
     gap: 50px;
     flex-wrap: wrap;
 }
-img:not(header img){
-   position:relative;
-   left: 180px;
-}
+
 /*propiedades ropa hombre*/
 .color-link{
     color: white;
@@ -134,6 +133,7 @@ img:not(header img){
 .div-hombre{
     display: flex;
     justify-content: space-around;
+    padding: 40px;
 }
 .li-hombre {
     color: white;
@@ -146,6 +146,16 @@ img:not(header img){
     text-align: center;
     font-size: 60px;
 }
+.carousel1{
+    width: 70%;
+    height: 400px;
+    align-items: center;
+}
+.hombre-img{
+    position: relative;
+    left: 170px;
+}
+
 /*media queries - index*/
 @media (max-width: 575px){
     header h1{
@@ -169,7 +179,7 @@ img:not(header img){
         display: flex;
         flex-direction: column;
         padding: 0px;
-        justify-content: left;
+        align-items: center;
     }
 
     #section-index {
@@ -183,6 +193,9 @@ img:not(header img){
         padding: 0;
         font-size: 15px;
         width: 20%;
+    }
+    #h2-index{
+        padding-bottom: 120px;
     }
     
 }   
@@ -206,6 +219,9 @@ img:not(header img){
         font-size: 20px;
         display: flex;
         flex-wrap: wrap;
+    }
+    li:not(nav){
+        border: 2px double white;
     }
 }
 

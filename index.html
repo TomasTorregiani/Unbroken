@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/Kb (1).jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,34 +22,40 @@
                     <li>Medios de pago</li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                     <li> <a href="./pages/preguntas.html">Preguntas frecuentes</a></li>
-
                 </ul>
             </nav>    
-
-        </header>
-        
-        <h2 id="h2-index">Forging elite atlets</h2>
+        </header>        
+        <div>
+            <h2 id="h2-index">Forging elite atlets</h2>
+        </div>
         
         <!--en la seccion nav tanto las fotos como las palabras hacerlas linkeables-->
-        <main id="main-index">
-            <div id="div-index1">   
-                <a href="./pages/mujer.html">
-                    <h3>Ropa mujer</h3>
-                    <img src="./img/ropamujer.jpg" alt="ropa mujer">
-                </a>
-            </div>
-            <div id="div-index2">
-                <a href="./pages/hombre.html">
-                    <h3>Ropa hombre</h3>
-                    <img src="./img/Untitled (1).jpg" alt="ropa hombre">
-                </a>
-            </div>
-            <div id="div-index3">             
-                <a href="./pages/unseix.html">
-                    <h3>Ropa unisex</h3>
-                    <img src=".//img/remera7.jpg" alt="Unisex">
-                </a>
-            </div>    
+        <main id="main-index">        
+                <div id="div-index1" class="card border-danger cards-size" style="width: 18rem;">
+                    <img src="./img/cardmujer.jpg"class="card-img-top img-cards" alt="Ropa Mujer">
+                    <div class="card-body">
+                      <h5 class="card-title">Ropa Mujer</h5>
+                      <p class="card-text">La mejor ropa deportiva para mujer</p>
+                      <a href="./pages/mujer.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div id="div-index2" class="card border-dark" style="width: 18rem;">
+                    <img src="./img/cardhombre.jpg"card-img-top img-cards" alt="Ropa Hombre">
+                    <div class="card-body">
+                      <h5 class="card-title">Ropa Hombre</h5>
+                      <p class="card-text">La mejor ropa deportiva para hombre</p>
+                      <a href="./pages/hombre.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div id="div-index3" class="card border-danger" style="width: 18rem;">
+                    <img src="./img/cardunisex.jpg" class="card-img-top img-cards img-cards" alt="Ropa Unisex">
+                    <div class="card-body">
+                      <h5 class="card-title">Ropa Unisex</h5>
+                      <p class="card-text">La mejor ropa deportiva unisex</p>
+                      <a href="./pages/unseix.html" class="btn btn-primary">Comprar</a>
+                    </div>      
+                </div>
+                
             <section id="section-index" class="font-white">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a sapiente autem odio officiis magnam corporis suscipit porro eaque excepturi nobis inventore sint itaque nostrum quia ut. Nobis architecto harum iure, quaerat asperiores sint. Optio, minima eum? Quibusdam minima voluptatem vero unde, quaerat sequi magnam voluptatum officia saepe doloribus cumque labore quae consequuntur esse ut dolorem quod quos autem, eveniet iusto exercitationem. Fuga nam accusantium est? Error placeat consequuntur ullam itaque provident ad voluptatibus exercitationem doloremque aut necessitatibus eos, ducimus nemo? Maxime sit iste non excepturi provident saepe nobis cumque vel? Perspiciatis omnis ab tempora odit reprehenderit, dolore optio exercitationem, iste excepturi natus sunt modi molestias dignissimos necessitatibus illo aliquid, sint accusantium velit minima provident facilis quia recusandae.tum officia saepe doloribus cumque labore quae consequuntur esse ut 
             </p>
@@ -61,5 +68,6 @@
             <div>Seguinos en Instagram</div>
             <div class="footer-div">SEGUINOS</div>         
         </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
 </html>
