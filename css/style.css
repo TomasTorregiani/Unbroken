@@ -16,6 +16,14 @@ body {
     z-index: 1000;
     background-color: white;
 }
+.headermobile{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: white;
+    display: none;
+}
 header h1 {
     font-family: 'Pangolin', cursive;
     font-weight:bolder;
@@ -127,6 +135,10 @@ footer {
 }
 
 /*propiedades ropa hombre*/
+.p-hombre{
+    text-align: center;
+    font-size: 25px;
+}
 .color-link{
     color: white;
     text-decoration: none;
@@ -156,20 +168,21 @@ footer {
     position: relative;
     left: 170px;
 }
+.div-hombre2{
+    display: flex;
+    justify-content: space-around;
+}
 
 /*media queries - index*/
 @media (max-width: 575px){
-    header h1{
-        font-size: 50px;
-        text-align: center;
+    .header{
+        display: none;
     }
-    header{      
-        flex-direction: column;    
+    .headermobile{
+        display: block;
     }
     .ul-nav{
-        font-size: 12px;
-        justify-content: space-evenly;
-        padding: 0;
+        justify-content: space-between;
     }
     #h2-index{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -181,6 +194,7 @@ footer {
         flex-direction: column;
         padding: 0px;
         align-items: center;
+        gap: 80px;
     }
 
     #section-index {
@@ -223,6 +237,9 @@ footer {
     }
     li:not(nav){
         border: 2px double white;
+    }
+    iframe{
+        display: none;
     }
 }
 
