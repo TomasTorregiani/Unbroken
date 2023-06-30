@@ -1,0 +1,30 @@
+/*estilos para el footer index*/
+footer{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px ;
+    background-color: blue;
+    height: 200px;
+    #div-footer1{ 
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        gap: 5px;      
+    }
+    #div-footer2{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+.footer-div1{
+    font-size: 35px;
+}
+.footer-div2{
+    padding: 10px;
+    border: white 2px solid;
+    background-color: black;
+    color: white;
+}

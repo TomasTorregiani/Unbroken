@@ -1,12 +1,9 @@
-/*font-family: 'Pangolin', cursive;
-font-family: 'Roboto Condensed', sans-serif;*/
-
+/*estilos para el header-index*/
 header {
   display: flex;
   justify-content: space-between;
   background-color: white;
   padding: 20px;
-  margin: 5px;
 }
 header h1 {
   font-size: 50px;
@@ -51,6 +48,185 @@ header nav ul li {
   .headermobile li {
     font-size: 10px;
   }
+}
+
+/*estilos para el main-index*/
+body {
+  background-size: cover;
+}
+
+#div1 {
+  height: 100px;
+  background-color: red;
+  margin-bottom: 15px;
+}
+#div1 h2 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+#main-index section {
+  display: flex;
+  justify-content: space-between;
+}
+#main-index section #div-index1 {
+  height: 530px;
+  font-size: 15px;
+  background-color: transparent;
+}
+#main-index section #div-index1 img {
+  border-radius: 75%;
+}
+#main-index section #div-index1 h5 {
+  font-size: 20px;
+  text-align: center;
+}
+#main-index section #div-index1 p {
+  font-size: 18px;
+}
+#main-index section #div-index2 {
+  background-color: transparent;
+}
+#main-index section #div-index2 img {
+  border-radius: 75%;
+}
+#main-index section #div-index2 h5 {
+  font-size: 20px;
+  text-align: center;
+}
+#main-index section #div-index2 p {
+  font-size: 18px;
+}
+#main-index section #div-index3 {
+  background-color: transparent;
+}
+#main-index section #div-index3 img {
+  border-radius: 75%;
+}
+#main-index section #div-index3 h5 {
+  font-size: 20px;
+  text-align: center;
+}
+#main-index section #div-index3 p {
+  font-size: 18px;
+}
+#main-index aside {
+  background-color: lightblue;
+  margin: 40px 0;
+}
+
+.card-div {
+  background-color: white;
+  height: 100px;
+}
+
+.cardbutton {
+  background-color: rgb(153, 87, 181);
+  align-items: center;
+}
+
+/*estilos para el footer index*/
+footer {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+  background-color: blue;
+  height: 200px;
+}
+footer #div-footer1 {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+footer #div-footer2 {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer-div1 {
+  font-size: 35px;
+}
+
+.footer-div2 {
+  padding: 10px;
+  border: white 2px solid;
+  background-color: black;
+  color: white;
+}
+
+.headerdesktop {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .headerdesktop {
+    display: none;
+  }
+}
+.headerdesktop p {
+  font-size: 50px;
+}
+.headerdesktop p::first-letter {
+  color: red;
+}
+
+.headermobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  .headermobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .headermobile a {
+    display: none;
+  }
+  .headermobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.h3-hombre {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.font-white {
+  color: white;
+}
+
+#section-hombre {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 350px 300px;
+  grid-template-areas: "ul iframe" "cl cl";
+}
+
+.ul-hombre {
+  grid-area: ul;
+}
+.ul-hombre li {
+  color: white;
+  font-size: 35px;
+}
+
+.iframe-hombre {
+  grid-area: iframe;
+}
+
+.carousel {
+  grid-area: cl;
+}
+
+.h5-shorts {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

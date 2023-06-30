@@ -1,11 +1,11 @@
+/*estilos para el header-index*/
 header{
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 20px;
-    margin: 5px;
     h1{
-        font-size: 50px;
+       font-size: 50px;
        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
         &::first-letter{
         font-weight: bolder;

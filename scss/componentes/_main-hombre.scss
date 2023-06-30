@@ -1,0 +1,33 @@
+.h3-hombre{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.font-white{ 
+    color: white;
+}
+#section-hombre{
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 350px 300px;
+    grid-template-areas: 
+    "ul iframe"
+    "cl cl";
+}
+.ul-hombre{
+    grid-area: ul;
+    li{
+        color: white;
+        font-size: 35px;
+    }
+}
+.iframe-hombre{
+    grid-area: iframe;
+}
+.carousel{
+    grid-area: cl;
+}
+.h5-shorts{
+    color: black;
+}    
+

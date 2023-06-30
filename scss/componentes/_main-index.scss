@@ -1,0 +1,75 @@
+/*estilos para el main-index*/
+body{
+    background-size: cover;
+}
+#div1{
+    height: 100px;
+    background-color:red;
+    margin-bottom: 15px; 
+    h2{
+        font-size: 50px;
+        color: black;
+        text-align: center;
+   }
+}
+#main-index{  
+        section{
+            display: flex;
+            justify-content: space-between;
+            #div-index1{
+                height: 530px;
+                font-size: 15px;
+                background-color:transparent;
+                img{ 
+                    border-radius: 75%;
+                }  
+                h5{
+                    font-size: 20px;
+                    text-align: center;
+                }  
+                p{
+                    font-size: 18px;
+                }           
+            }  
+            #div-index2{
+                background-color: transparent;                
+                img{ 
+                    border-radius: 75%;
+                }
+                h5{
+                    font-size: 20px;
+                    text-align: center;
+                }  
+                p{
+                    font-size: 18px;
+                }           
+            }
+            #div-index3{
+                background-color: transparent;                
+                img{ 
+                    border-radius: 75%;
+                }
+                h5{
+                    font-size: 20px;
+                    text-align: center;
+                }  
+                p{
+                    font-size: 18px;
+                }           
+            }    
+        }
+        aside{
+            background-color: lightblue;
+            margin: 40px 0;
+        }
+}
+.card-div{
+    background-color: white;
+    height: 100px;
+}
+.cardbutton{
+    background-color: rgb(153, 87, 181);
+    align-items: center;
+}
+
+
