@@ -1,0 +1,22 @@
+#main-remeras{
+        margin: 0;
+        h3{
+            text-align: center;
+            padding: 30px;
+            font-size: 25px;
+        }
+        p{
+            text-align: left;
+            padding: 15px;
+        }
+        #div-remeras{ 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 100px;              
+        }
+        div{
+            display: flex;
+            justify-content: space-evenly;
+        }
+}

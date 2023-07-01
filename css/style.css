@@ -159,6 +159,7 @@ footer #div-footer2 {
   color: white;
 }
 
+/*estilos para header-hombre*/
 .headerdesktop {
   display: flex;
   align-items: center;
@@ -192,6 +193,7 @@ footer #div-footer2 {
   }
 }
 
+/*estilos para main-hombre*/
 .h3-hombre {
   font-size: 40px;
   color: white;
@@ -227,6 +229,75 @@ footer #div-footer2 {
 
 .h5-shorts {
   color: black;
+}
+
+.carousel1 {
+  display: flex;
+  justify-content: center;
+}
+
+.div-hombre {
+  display: flex;
+}
+
+/*estilos para header-remeras-hombre*/
+.headerdesktop {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: 120px;
+  margin: 0;
+}
+@media (max-width: 575px) {
+  .headerdesktop {
+    display: none;
+  }
+}
+.headerdesktop p {
+  font-size: 50px;
+}
+.headerdesktop p::first-letter {
+  color: red;
+}
+
+.headermobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  .headermobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .headermobile a {
+    display: none;
+  }
+  .headermobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#main-remeras {
+  margin: 0;
+}
+#main-remeras h3 {
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+}
+#main-remeras p {
+  text-align: left;
+  padding: 15px;
+}
+#main-remeras #div-remeras {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+#main-remeras div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */

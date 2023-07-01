@@ -1,7 +1,10 @@
-/*estilos para header-hombre*/
+/*estilos para header-remeras-hombre*/
 .headerdesktop{
     display: flex;
     align-items: center;
+    padding: 0;
+    height: 120px;
+    margin: 0;
     @media (max-width: 575px){
         display: none;
     }
@@ -26,4 +29,3 @@
         }
     }
 }
-
