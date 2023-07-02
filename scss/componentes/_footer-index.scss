@@ -6,13 +6,13 @@ footer{
     gap: 20px ;
     background-color: blue;
     height: 200px;
-    #div-footer1{ 
+    .div-footer1{ 
         background-color: transparent;
         display: flex;
         justify-content: center;
         gap: 5px;      
     }
-    #div-footer2{
+    .div-footer2{
         background-color: transparent;
         display: flex;
         justify-content: center;

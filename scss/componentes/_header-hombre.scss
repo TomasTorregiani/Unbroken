@@ -1,29 +1,3 @@
 /*estilos para header-hombre*/
-.headerdesktop{
-    display: flex;
-    align-items: center;
-    @media (max-width: 575px){
-        display: none;
-    }
-    p{
-        font-size: 50px;
-        &::first-letter{ 
-            color: red;
-        }
-    }
-}
-.headermobile{ 
-    display: none;
-    @media (max-width: 575px){
-        display: flex;
-        flex-direction: column;
-        a{
-            display: none;
-        }
-        ul{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
+
 

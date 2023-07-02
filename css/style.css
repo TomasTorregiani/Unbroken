@@ -1,9 +1,6 @@
 /*estilos para el header-index*/
 header {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  padding: 20px;
+  margin: 0;
 }
 header h1 {
   font-size: 50px;
@@ -23,31 +20,6 @@ header nav ul {
 }
 header nav ul li {
   font-size: 15px;
-}
-@media (max-width: 575px) {
-  header {
-    display: none;
-  }
-}
-
-.headermobile {
-  display: none;
-}
-@media (max-width: 575px) {
-  .headermobile {
-    font-size: 10px;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    flex-direction: column;
-  }
-  .headermobile h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .headermobile li {
-    font-size: 10px;
-  }
 }
 
 /*estilos para el main-index*/
@@ -135,13 +107,13 @@ footer {
   background-color: blue;
   height: 200px;
 }
-footer #div-footer1 {
+footer .div-footer1 {
   background-color: transparent;
   display: flex;
   justify-content: center;
   gap: 5px;
 }
-footer #div-footer2 {
+footer .div-footer2 {
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -159,45 +131,12 @@ footer #div-footer2 {
   color: white;
 }
 
-/*estilos para header-hombre*/
-.headerdesktop {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 575px) {
-  .headerdesktop {
-    display: none;
-  }
-}
-.headerdesktop p {
-  font-size: 50px;
-}
-.headerdesktop p::first-letter {
-  color: red;
-}
-
-.headermobile {
-  display: none;
-}
-@media (max-width: 575px) {
-  .headermobile {
-    display: flex;
-    flex-direction: column;
-  }
-  .headermobile a {
-    display: none;
-  }
-  .headermobile ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/*estilos para main-hombre*/
+/*estilos para header-hombre*/ /*estilos para main-hombre*/
 .h3-hombre {
   font-size: 40px;
   color: white;
   text-align: center;
+  text-decoration: underline;
 }
 
 .font-white {
@@ -238,6 +177,14 @@ footer #div-footer2 {
 
 .div-hombre {
   display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.h4-hombre {
+  font-size: 35px;
+  margin: 20px;
+  text-decoration: underline;
 }
 
 /*estilos para header-remeras-hombre*/
@@ -298,6 +245,19 @@ footer #div-footer2 {
 #main-remeras div {
   display: flex;
   justify-content: space-evenly;
+}
+
+header {
+  margin: 0;
+  height: 15px;
+}
+header h1::first-letter {
+  font-weight: bolder;
+  color: red;
+}
+
+.bg-color {
+  background-color: rgba(186, 142, 142, 0.658);
 }
 
 /*# sourceMappingURL=style.css.map */

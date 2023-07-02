@@ -3,6 +3,7 @@
     font-size: 40px;
     color: white;
     text-align: center;
+    text-decoration: underline;
 }
 .font-white{ 
     color: white;
@@ -38,4 +39,11 @@
 }
 .div-hombre{
     display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.h4-hombre{
+    font-size: 35px;
+    margin: 20px;
+    text-decoration: underline;
 }
