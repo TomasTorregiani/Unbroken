@@ -6,20 +6,35 @@ body{
     height: 100px;
     background-color:red;
     margin-bottom: 15px; 
+    @media (max-width: 575px){
+        height: 50px;;
+    }
     h2{
         font-size: 50px;
         color: black;
         text-align: center;
+        @media (max-width: 575px){
+            font-size: 30px;
+            margin-bottom: 0;
+        }        
    }
 }
-#main-index{  
+#main-index{ 
         section{
             display: flex;
             justify-content: space-between;
+            @media (max-width:575px){
+                flex-direction: column;
+                
+                gap: 50px;
+            }
             #div-index1{
                 height: 530px;
                 font-size: 15px;
                 background-color:transparent;
+                @media (max-width:575px){
+                    display: none;
+                }
                 img{ 
                     border-radius: 75%;
                 }  
@@ -31,8 +46,12 @@ body{
                     font-size: 18px;
                 }           
             }  
+        
             #div-index2{
                 background-color: transparent;                
+                @media (max-width:575px){
+                    display: none;
+                }    
                 img{ 
                     border-radius: 75%;
                 }
@@ -44,8 +63,12 @@ body{
                     font-size: 18px;
                 }           
             }
+
             #div-index3{
                 background-color: transparent;                
+                @media (max-width:575px){
+                    display: none;                    
+                }    
                 img{ 
                     border-radius: 75%;
                 }
@@ -60,7 +83,19 @@ body{
         }
         aside{
             background-color: lightblue;
-            margin: 40px 0;
+            margin: 40px 0 0 0;
+        }
+        #div-mobile{
+            display: none;            
+            @media (max-width:575px){
+                display: flex;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    
+             }
+            }
         }
 }
 .card-div{
@@ -70,6 +105,5 @@ body{
 .cardbutton{
     background-color: rgb(153, 87, 181);
     align-items: center;
-}
-
+}    
 

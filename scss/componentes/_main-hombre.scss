@@ -15,6 +15,10 @@
     grid-template-areas: 
     "ul iframe"
     "cl cl";
+    @media(max-width: 575px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 .ul-hombre{
     grid-area: ul;
@@ -25,6 +29,9 @@
 }
 .iframe-hombre{
     grid-area: iframe;
+    @media(max-width: 575px){
+        display: none;
+     }
 }
 .carousel{
     grid-area: cl;
@@ -41,9 +48,23 @@
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
+    @media (max-width:575px){
+        display: none;
+    }
 }
 .h4-hombre{
     font-size: 35px;
     margin: 20px;
     text-decoration: underline;
+    @media(max-width: 575px){
+        font-size: 20px;
+        text-align: center;
+     }
+}
+.div-hombre-mobile{
+    display: none;
+    @media (max-width:575px){
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

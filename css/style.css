@@ -21,31 +21,50 @@ header nav ul {
 header nav ul li {
   font-size: 15px;
 }
-
 /*estilos para el main-index*/
 body {
   background-size: cover;
 }
-
 #div1 {
   height: 100px;
   background-color: red;
   margin-bottom: 15px;
+}
+@media (max-width: 575px) {
+  #div1 {
+    height: 50px;
+  }
 }
 #div1 h2 {
   font-size: 50px;
   color: black;
   text-align: center;
 }
-
+@media (max-width: 575px) {
+  #div1 h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
 #main-index section {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 575px) {
+  #main-index section {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 #main-index section #div-index1 {
   height: 530px;
   font-size: 15px;
   background-color: transparent;
+}
+@media (max-width: 575px) {
+  #main-index section #div-index1 {
+    display: none;
+  }
 }
 #main-index section #div-index1 img {
   border-radius: 75%;
@@ -60,6 +79,11 @@ body {
 #main-index section #div-index2 {
   background-color: transparent;
 }
+@media (max-width: 575px) {
+  #main-index section #div-index2 {
+    display: none;
+  }
+}
 #main-index section #div-index2 img {
   border-radius: 75%;
 }
@@ -73,6 +97,11 @@ body {
 #main-index section #div-index3 {
   background-color: transparent;
 }
+@media (max-width: 575px) {
+  #main-index section #div-index3 {
+    display: none;
+  }
+}
 #main-index section #div-index3 img {
   border-radius: 75%;
 }
@@ -85,19 +114,29 @@ body {
 }
 #main-index aside {
   background-color: lightblue;
-  margin: 40px 0;
+  margin: 40px 0 0 0;
 }
-
+#main-index #div-mobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  #main-index #div-mobile {
+    display: flex;
+    align-items: center;
+  }
+  #main-index #div-mobile div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .card-div {
   background-color: white;
   height: 100px;
 }
-
 .cardbutton {
   background-color: rgb(153, 87, 181);
   align-items: center;
 }
-
 /*estilos para el footer index*/
 footer {
   display: flex;
@@ -106,6 +145,14 @@ footer {
   gap: 20px;
   background-color: blue;
   height: 200px;
+}
+@media (max-width: 575px) {
+  footer {
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    gap: 0;
+  }
 }
 footer .div-footer1 {
   background-color: transparent;
@@ -119,18 +166,27 @@ footer .div-footer2 {
   justify-content: center;
   gap: 5px;
 }
-
 .footer-div1 {
   font-size: 35px;
 }
-
+@media (max-width: 575px) {
+  .footer-div1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
 .footer-div2 {
   padding: 10px;
   border: white 2px solid;
   background-color: black;
   color: white;
 }
-
+@media (max-width: 575px) {
+  .footer-div2 {
+    padding: 5px;
+    font-size: 15px;
+  }
+}
 /*estilos para header-hombre*/ /*estilos para main-hombre*/
 .h3-hombre {
   font-size: 40px;
@@ -149,6 +205,12 @@ footer .div-footer2 {
   grid-template-rows: 350px 300px;
   grid-template-areas: "ul iframe" "cl cl";
 }
+@media (max-width: 575px) {
+  #section-hombre {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .ul-hombre {
   grid-area: ul;
@@ -160,6 +222,11 @@ footer .div-footer2 {
 
 .iframe-hombre {
   grid-area: iframe;
+}
+@media (max-width: 575px) {
+  .iframe-hombre {
+    display: none;
+  }
 }
 
 .carousel {
@@ -180,11 +247,32 @@ footer .div-footer2 {
   justify-content: space-evenly;
   margin: 30px;
 }
+@media (max-width: 575px) {
+  .div-hombre {
+    display: none;
+  }
+}
 
 .h4-hombre {
   font-size: 35px;
   margin: 20px;
   text-decoration: underline;
+}
+@media (max-width: 575px) {
+  .h4-hombre {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.div-hombre-mobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  .div-hombre-mobile {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 /*estilos para header-remeras-hombre*/
@@ -255,7 +343,6 @@ header h1::first-letter {
   font-weight: bolder;
   color: red;
 }
-
 .bg-color {
   background-color: rgba(186, 142, 142, 0.658);
 }

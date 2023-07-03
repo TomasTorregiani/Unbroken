@@ -6,6 +6,12 @@ footer{
     gap: 20px ;
     background-color: blue;
     height: 200px;
+    @media (max-width:575px){
+        flex-direction: column;
+        height: 130px;
+        justify-content: center;
+        gap: 0;
+    }
     .div-footer1{ 
         background-color: transparent;
         display: flex;
@@ -17,14 +23,23 @@ footer{
         display: flex;
         justify-content: center;
         gap: 5px;
-    }
+    }   
 }
 .footer-div1{
     font-size: 35px;
+    @media (max-width:575px){
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
 .footer-div2{
     padding: 10px;
     border: white 2px solid;
     background-color: black;
     color: white;
+    @media (max-width:575px){
+        padding: 5px;
+        font-size: 15px;
+    }
 }
+
