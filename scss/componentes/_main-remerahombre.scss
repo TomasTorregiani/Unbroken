@@ -1,22 +1,31 @@
 #main-remeras{
-        margin: 0;
-        h3{
-            text-align: center;
-            padding: 30px;
-            font-size: 25px;
+      
+    .div1{
+        @extend %DivPrincipal;
+        @media (max-width: 575px){
+            height: nth($list-sizepx, 10 );
         }
+        h2{
+            @extend %h2Principal;
+            @media (max-width: 575px){
+                font-size: nth($list-sizepx, 6 );
+                margin-bottom: 0;
+            }        
+       }
+    }
         p{
             text-align: left;
-            padding: 15px;
+            padding: nth($list-sizepx , 3);
         }
         #div-remeras{ 
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 100px;              
+            gap: ($smaller*2);              
         }
         div{
             display: flex;
             justify-content: space-evenly;
         }
-}
+       
+}        

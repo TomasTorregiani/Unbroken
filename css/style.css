@@ -1,3 +1,29 @@
+#main-remeras .div1, .div1 {
+  height: 100px;
+  background-color: red;
+  margin-bottom: 15px;
+}
+
+#main-remeras .div1 h2, .div1 h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+#main-index section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-hombre {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#div-produ3, #div-produ2, #div-produ1 {
+  justify-items: center;
+  align-items: center;
+}
+
 /*estilos para el header-index*/
 header {
   margin: 0;
@@ -6,50 +32,31 @@ header h1 {
   font-size: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-header h1::first-letter {
+header h1:first-letter {
   font-weight: bolder;
   color: red;
 }
 header nav {
-  padding: 2px;
+  height: 100px;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-header nav ul li {
-  font-size: 15px;
-}
+
 /*estilos para el main-index*/
 body {
   background-size: cover;
 }
-#div1 {
-  height: 100px;
-  background-color: red;
-  margin-bottom: 15px;
-}
+
 @media (max-width: 575px) {
-  #div1 {
+  .div1 {
     height: 50px;
   }
 }
-#div1 h2 {
-  font-size: 50px;
-  color: black;
-  text-align: center;
-}
 @media (max-width: 575px) {
-  #div1 h2 {
+  .div1 h2 {
     font-size: 30px;
     margin-bottom: 0;
   }
 }
-#main-index section {
-  display: flex;
-  justify-content: space-between;
-}
+
 @media (max-width: 575px) {
   #main-index section {
     flex-direction: column;
@@ -113,8 +120,8 @@ body {
   font-size: 18px;
 }
 #main-index aside {
-  background-color: lightblue;
-  margin: 40px 0 0 0;
+  background-color: rgb(251, 158, 158);
+  margin: 40 0 0 0;
 }
 #main-index #div-mobile {
   display: none;
@@ -129,14 +136,17 @@ body {
     flex-direction: column;
   }
 }
+
 .card-div {
   background-color: white;
   height: 100px;
 }
+
 .cardbutton {
   background-color: rgb(153, 87, 181);
   align-items: center;
 }
+
 /*estilos para el footer index*/
 footer {
   display: flex;
@@ -144,6 +154,7 @@ footer {
   align-items: center;
   gap: 20px;
   background-color: blue;
+  padding: 5px;
   height: 200px;
 }
 @media (max-width: 575px) {
@@ -166,6 +177,7 @@ footer .div-footer2 {
   justify-content: center;
   gap: 5px;
 }
+
 .footer-div1 {
   font-size: 35px;
 }
@@ -175,6 +187,7 @@ footer .div-footer2 {
     font-weight: bold;
   }
 }
+
 .footer-div2 {
   padding: 10px;
   border: white 2px solid;
@@ -187,65 +200,59 @@ footer .div-footer2 {
     font-size: 15px;
   }
 }
-/*estilos para header-hombre*/ /*estilos para main-hombre*/
-.h3-hombre {
-  font-size: 40px;
+
+/*estilos para main-hombre*/
+@media (max-width: 575px) {
+  .div1 {
+    height: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .div1 h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+
+#div2 .font-white {
+  font-size: 30px;
+}
+@media (max-width: 575px) {
+  #div2 .font-white {
+    font-size: 20px;
+  }
+}
+
+section {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+section .ul-hombre li {
   color: white;
-  text-align: center;
-  text-decoration: underline;
+  font-size: 35px;
+}
+@media (max-width: 575px) {
+  section .ul-hombre li {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  section iframe {
+    display: none;
+  }
 }
 
 .font-white {
   color: white;
 }
 
-#section-hombre {
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-template-rows: 350px 300px;
-  grid-template-areas: "ul iframe" "cl cl";
-}
-@media (max-width: 575px) {
-  #section-hombre {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.ul-hombre {
-  grid-area: ul;
-}
-.ul-hombre li {
-  color: white;
-  font-size: 35px;
-}
-
-.iframe-hombre {
-  grid-area: iframe;
-}
-@media (max-width: 575px) {
-  .iframe-hombre {
-    display: none;
-  }
-}
-
-.carousel {
-  grid-area: cl;
-}
-
 .h5-shorts {
   color: black;
 }
 
-.carousel1 {
-  display: flex;
-  justify-content: center;
-}
-
 .div-hombre {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px;
+  margin: 80px 0;
 }
 @media (max-width: 575px) {
   .div-hombre {
@@ -253,13 +260,13 @@ footer .div-footer2 {
   }
 }
 
-.h4-hombre {
+.h3-hombre {
   font-size: 35px;
   margin: 20px;
   text-decoration: underline;
 }
 @media (max-width: 575px) {
-  .h4-hombre {
+  .h3-hombre {
     font-size: 20px;
     text-align: center;
   }
@@ -275,50 +282,25 @@ footer .div-footer2 {
   }
 }
 
-/*estilos para header-remeras-hombre*/
-.headerdesktop {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  height: 120px;
-  margin: 0;
+.height {
+  height: 350px;
 }
 @media (max-width: 575px) {
-  .headerdesktop {
-    display: none;
-  }
-}
-.headerdesktop p {
-  font-size: 50px;
-}
-.headerdesktop p::first-letter {
-  color: red;
-}
-
-.headermobile {
-  display: none;
-}
-@media (max-width: 575px) {
-  .headermobile {
-    display: flex;
-    flex-direction: column;
-  }
-  .headermobile a {
-    display: none;
-  }
-  .headermobile ul {
-    display: flex;
-    flex-direction: column;
+  .height {
+    height: 200px;
   }
 }
 
-#main-remeras {
-  margin: 0;
+@media (max-width: 575px) {
+  #main-remeras .div1 {
+    height: 50px;
+  }
 }
-#main-remeras h3 {
-  text-align: center;
-  padding: 30px;
-  font-size: 25px;
+@media (max-width: 575px) {
+  #main-remeras .div1 h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
 }
 #main-remeras p {
   text-align: left;
@@ -335,16 +317,101 @@ footer .div-footer2 {
   justify-content: space-evenly;
 }
 
-header {
-  margin: 0;
-  height: 15px;
-}
-header h1::first-letter {
-  font-weight: bolder;
-  color: red;
-}
 .bg-color {
   background-color: rgba(186, 142, 142, 0.658);
+}
+
+/*aca empiezan las propiedades para productos destacados*/
+/*grilla para remeras*/
+#div-produ1 {
+  background-color: lightgreen;
+  margin: 50px 0;
+  height: 850px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "remeras r1 r2" "remeras r3 r4";
+  gap: 20px;
+}
+#div-produ1 .remeras {
+  font-size: 80px;
+  border: red 4px solid;
+  grid-area: remeras;
+}
+#div-produ1 .r1 {
+  grid-area: r1;
+}
+#div-produ1 .r2 {
+  grid-area: r2;
+}
+#div-produ1 .r3 {
+  grid-area: r3;
+}
+#div-produ1 .r4 {
+  grid-area: r4;
+}
+
+/*grilla para pantalones*/
+#div-produ2 {
+  background-color: rgb(172, 144, 238);
+  margin: 50px 0;
+  height: 850px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "p1 p2 pantalones" "p3 p4 pantalones";
+  gap: 20px;
+}
+#div-produ2 .pantalones {
+  grid-area: pantalones;
+  color: red;
+  border: black 4px solid;
+  font-size: 80px;
+}
+#div-produ2 .pantalones .p1 {
+  grid-area: p1;
+}
+#div-produ2 .pantalones .p2 {
+  grid-area: p2;
+}
+#div-produ2 .pantalones .p3 {
+  grid-area: p3;
+}
+#div-produ2 .pantalones .p4 {
+  grid-area: p4;
+}
+
+/*grilla para shorts*/
+#div-produ3 {
+  background-color: rgb(128, 71, 69);
+  margin: 50px 0;
+  height: 850px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "s1 shorts s2" "s3 shorts s4";
+  gap: 20px;
+}
+#div-produ3 .shorts {
+  font-size: 80px;
+  border: blue 4px solid;
+  grid-area: shorts;
+}
+#div-produ3 .s1 {
+  grid-area: s1;
+  justify-self: center;
+}
+#div-produ3 .s2 {
+  grid-area: s2;
+  justify-self: center;
+}
+#div-produ3 .s3 {
+  grid-area: s3;
+  justify-self: center;
+}
+#div-produ3 .s4 {
+  grid-area: s4;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,58 +1,63 @@
 /*estilos para main-hombre*/
-.h3-hombre{
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
+
+.div1{
+    @extend %DivPrincipal;
+    @media (max-width: 575px){
+        height: nth($list-sizepx, 10 );
+    }
+    h2{
+        @extend %h2Principal;
+        @media (max-width: 575px){
+            font-size: nth($list-sizepx, 6 );
+            margin-bottom: 0;
+        }        
+   }
 }
+#div2{
+    .font-white{
+        font-size: 30px;
+        @media (max-width: 575px){
+            font-size: 20px;
+        }
+    }
+}
+section{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    .ul-hombre{   
+        li{
+            color: white;
+            font-size: 35px;
+            @media (max-width: 575px){
+                font-size: 30px;
+            }
+        }
+    }    
+    iframe{
+        @media(max-width: 575px){
+            display: none;
+         }
+    }
+}
+
 .font-white{ 
-    color: white;
+    color: $colorwhite;
 }
-#section-hombre{
-    display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-rows: 350px 300px;
-    grid-template-areas: 
-    "ul iframe"
-    "cl cl";
-    @media(max-width: 575px){
-        display: flex;
-        flex-direction: column;
-    }
-}
-.ul-hombre{
-    grid-area: ul;
-    li{
-        color: white;
-        font-size: 35px;
-    }
-}
-.iframe-hombre{
-    grid-area: iframe;
-    @media(max-width: 575px){
-        display: none;
-     }
-}
-.carousel{
-    grid-area: cl;
-}
+
 .h5-shorts{
     color: black;
 }    
 
-.carousel1{
-    display: flex;
-    justify-content: center;
-}
+
 .div-hombre{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
+    @extend %flexevenly;
+    margin: 80px 0;
     @media (max-width:575px){
         display: none;
     }
 }
-.h4-hombre{
+.h3-hombre{
     font-size: 35px;
     margin: 20px;
     text-decoration: underline;
@@ -66,5 +71,11 @@
     @media (max-width:575px){
         display: flex;
         justify-content: space-evenly;
+    }
+}    
+.height{
+    height: 350px;
+    @media (max-width:575px){
+        height: 200px;
     }
 }

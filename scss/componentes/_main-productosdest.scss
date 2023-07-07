@@ -1,0 +1,95 @@
+/*aca empiezan las propiedades para productos destacados*/
+/*grilla para remeras*/
+#div-produ1{
+    @include DivProdDest(lightgreen, 50px 0, 850px);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "remeras r1 r2"
+    "remeras r3 r4";
+    gap: 20px;
+    @extend %grid;
+    .remeras{
+        font-size: 80px;
+        border: red 4px solid;
+        grid-area: remeras;
+    }
+    .r1{
+        grid-area: r1;
+    }
+    .r2{
+        grid-area: r2;
+    }
+    .r3{
+        grid-area: r3;
+    }
+    .r4{
+        grid-area: r4;
+    }  
+}
+/*grilla para pantalones*/
+#div-produ2{
+    @include DivProdDest(rgb(172, 144, 238), 50px 0, 850px);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "p1 p2 pantalones"
+    "p3 p4 pantalones";
+    gap: 20px;
+    @extend %grid;
+    .pantalones{
+        grid-area: pantalones;
+        color: red;
+        border: black 4px solid;
+        font-size: 80px;
+        
+    .p1{
+        grid-area: p1;
+    }
+    .p2{
+        grid-area: p2;
+    }
+    .p3{
+        grid-area: p3;
+    }
+    .p4{
+        grid-area: p4;
+    }
+  }
+}
+/*grilla para shorts*/
+#div-produ3{
+    @include DivProdDest(rgb(128, 71, 69), 50px 0, 850px);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "s1 shorts s2"
+    "s3 shorts s4";
+    @extend %grid;
+    gap: 20px;
+    
+    .shorts{
+        font-size: 80px;
+        border: blue 4px solid;
+        grid-area: shorts;
+    }
+    .s1{
+        grid-area: s1;
+        justify-self: center;
+    }
+    .s2{
+        grid-area: s2;
+        justify-self: center;
+    }
+    .s3{
+        grid-area: s3;
+        justify-self: center;
+    }
+    .s4{
+        grid-area: s4;
+        justify-self: center;
+    }
+}

@@ -1,9 +1,13 @@
-@import "./componentes/header-index";
+@import "./base/variables";
+@import "./base/lists";
+@import "./base/maps";
+@import "./base/operaciones";
+@import "./base/extend";
+@import "./base/mixin";
+@import "./componentes/header";
 @import "./componentes/main-index";
 @import "./componentes/footer-index";
-@import "./componentes/header-hombre";
 @import "./componentes/main-hombre";
-@import "./componentes/header-remerahombre";
 @import "./componentes/main-remerahombre";
-@import "./componentes/header-contacto";
 @import "./componentes/body-contacto";
+@import "./componentes/main-productosdest";

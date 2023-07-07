@@ -3,9 +3,8 @@ footer{
     display: flex;
     justify-content: baseline;
     align-items: center;
-    gap: 20px ;
-    background-color: blue;
-    height: 200px;
+    gap: $size2 ; 
+    @include footer ($color-footer, 5px, 200px);
     @media (max-width:575px){
         flex-direction: column;
         height: 130px;

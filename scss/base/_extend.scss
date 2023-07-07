@@ -1,0 +1,24 @@
+%DivPrincipal{
+    height: map-get($main-index, height );
+    background-color: nth($list-colors,3 );
+    margin-bottom: nth($list-sizepx, 3 );
+}
+
+%h2Principal{
+    text-align: center;
+    font-size: 50px;
+}
+%flexbetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+%flexevenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+%grid{
+    justify-items: center;
+    align-items: center;
+}
+

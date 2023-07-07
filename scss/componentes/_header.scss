@@ -1,0 +1,15 @@
+/*estilos para el header-index*/
+header{
+    margin: 0;
+    h1{
+       font-size: calc( $small / 2 );
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+        &:first-letter{
+        font-weight: bolder;
+        color: red;
+       }     
+    }
+    nav{
+        height: ($smaller*2);
+    }
+}

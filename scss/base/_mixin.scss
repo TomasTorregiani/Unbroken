@@ -1,0 +1,11 @@
+
+@mixin footer ($bg-color, $padd, $hei){
+    background-color: $bg-color; 
+    padding: $padd;
+    height: $hei;
+}
+@mixin DivProdDest ($bg-color, $mg, $hei){
+    background-color: $bg-color;
+    margin: $mg;
+    height: $hei;
+}
