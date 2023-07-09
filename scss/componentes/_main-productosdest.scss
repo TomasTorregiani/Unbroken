@@ -27,7 +27,7 @@
         }
     .remeras{
         color: $colorwhite;
-        font-size: 80px;
+        font-size: 70px;
         border: red 4px solid;
         grid-area: remeras;
         @media (max-width: 575px){
@@ -77,7 +77,7 @@
         grid-area: pantalones;
         color: nth($list-colors, 4 );
         border: nth($list-colors, 5 ) 4px solid;
-        font-size: 80px;
+        font-size: 70px;
         @media (max-width: 575px){
             font-size: 30px;
         }
@@ -123,7 +123,7 @@
     }
     .shorts{
         color: $colorwhite;
-        font-size: 80px;
+        font-size: 70px;
         border: map-get($header-principal, bg) 4px solid;
         grid-area: shorts;
         @media (max-width: 575px){
