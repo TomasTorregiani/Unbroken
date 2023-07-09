@@ -1,7 +1,8 @@
 /*aca empiezan las propiedades para productos destacados*/
+
 /*grilla para remeras*/
 #div-produ1{
-    @include DivProdDest(lightgreen, 50px 0, 850px);
+    @include DivProdDest(rgb(0, 0, 0), 850px);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
@@ -10,10 +11,28 @@
     "remeras r3 r4";
     gap: 20px;
     @extend %grid;
+    @media (max-width: 575px){
+        img{
+            height: 200px;
+            width: 150px;
+        }
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 42% 43%;
+        grid-template-areas:
+        "remeras remeras"
+        "r1 r2"
+        "r3 r4";
+        gap: 0;
+        height: 600px;
+        }
     .remeras{
+        color: $colorwhite;
         font-size: 80px;
         border: red 4px solid;
         grid-area: remeras;
+        @media (max-width: 575px){
+            font-size: 30px;
+        }
     }
     .r1{
         grid-area: r1;
@@ -29,8 +48,9 @@
     }  
 }
 /*grilla para pantalones*/
+
 #div-produ2{
-    @include DivProdDest(rgb(172, 144, 238), 50px 0, 850px);
+    @include DivProdDest(rgb(255, 0, 0),850px);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
@@ -39,11 +59,28 @@
     "p3 p4 pantalones";
     gap: 20px;
     @extend %grid;
+    @media (max-width: 575px){
+        img{
+            height: 200px;
+            width: 150px;
+        }
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 42% 43%;
+        grid-template-areas:
+        "pantalones pantalones"
+        "p1 p2"
+        "p3 p4";
+        gap: 0;
+        height: 600px;
+    }
     .pantalones{
         grid-area: pantalones;
-        color: red;
-        border: black 4px solid;
+        color: nth($list-colors, 4 );
+        border: nth($list-colors, 5 ) 4px solid;
         font-size: 80px;
+        @media (max-width: 575px){
+            font-size: 30px;
+        }
         
     .p1{
         grid-area: p1;
@@ -61,7 +98,7 @@
 }
 /*grilla para shorts*/
 #div-produ3{
-    @include DivProdDest(rgb(128, 71, 69), 50px 0, 850px);
+    @include DivProdDest(rgb(0, 0, 0),850px);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
@@ -70,11 +107,28 @@
     "s3 shorts s4";
     @extend %grid;
     gap: 20px;
-    
+    @media (max-width: 575px){
+        img{
+            height: 200px;
+            width: 150px;
+        }
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 42% 43%;
+        grid-template-areas:
+        "shorts shorts"
+        "s1 s2"
+        "s3 s4";
+        gap: 0;
+        height: 600px;
+    }
     .shorts{
+        color: $colorwhite;
         font-size: 80px;
-        border: blue 4px solid;
+        border: map-get($header-principal, bg) 4px solid;
         grid-area: shorts;
+        @media (max-width: 575px){
+            font-size: 30px;
+        }
     }
     .s1{
         grid-area: s1;

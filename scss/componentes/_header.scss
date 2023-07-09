@@ -1,6 +1,9 @@
 /*estilos para el header-index*/
 header{
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     h1{
        font-size: calc( $small / 2 );
        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
@@ -8,8 +11,29 @@ header{
         font-weight: bolder;
         color: red;
        }     
-    }
+      
     nav{
+       
         height: ($smaller*2);
+    }
+}
+}
+.combinado:hover{
+        transform: rotate(360deg);
+        transition: all 1s;
+    }
+.animacion:hover{
+    animation: logo 3s;
+}   
+@keyframes logo{
+    1%{       
+    background: rgb(229,52,52);
+    background: -moz-radial-gradient(circle, rgba(229,52,52,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(229,52,52,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(229,52,52,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e53434",endColorstr="#000000",GradientType=1);  
+    }
+    80%{
+        transform: translateX(30px);
     }
 }

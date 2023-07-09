@@ -4,8 +4,7 @@
     padding: $padd;
     height: $hei;
 }
-@mixin DivProdDest ($bg-color, $mg, $hei){
+@mixin DivProdDest ($bg-color, $hei){
     background-color: $bg-color;
-    margin: $mg;
     height: $hei;
 }

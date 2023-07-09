@@ -1,5 +1,8 @@
 /*estilos para main-hombre*/
-
+#main-hombre{ 
+    background: url(/img/fondo.jpg);
+    background-size: cover;
+}
 .div1{
     @extend %DivPrincipal;
     @media (max-width: 575px){
@@ -14,6 +17,7 @@
    }
 }
 #div2{
+    
     .font-white{
         font-size: 30px;
         @media (max-width: 575px){
@@ -29,8 +33,14 @@ section{
         li{
             color: white;
             font-size: 35px;
+            &:hover{
+                transform: scale(1.5);
+                transition: all 1.8s;
+                background-color: rgb(255, 0, 0);
+                border: 1px black solid;
+            }
             @media (max-width: 575px){
-                font-size: 30px;
+            font-size: 30px;       
             }
         }
     }    
@@ -52,7 +62,7 @@ section{
 
 .div-hombre{
     @extend %flexevenly;
-    margin: 80px 0;
+    margin-top: 80px;
     @media (max-width:575px){
         display: none;
     }
@@ -78,4 +88,11 @@ section{
     @media (max-width:575px){
         height: 200px;
     }
+}
+.backgroundcarousel{
+    background: rgb(180,58,58);
+background: -moz-linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43a3a",endColorstr="#000000",GradientType=1);
 }

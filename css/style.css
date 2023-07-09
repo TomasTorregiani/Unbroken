@@ -27,6 +27,9 @@
 /*estilos para el header-index*/
 header {
   margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header h1 {
   font-size: 50px;
@@ -36,15 +39,32 @@ header h1:first-letter {
   font-weight: bolder;
   color: red;
 }
-header nav {
+header h1 nav {
   height: 100px;
 }
 
-/*estilos para el main-index*/
-body {
-  background-size: cover;
+.combinado:hover {
+  transform: rotate(360deg);
+  transition: all 1s;
 }
 
+.animacion:hover {
+  animation: logo 3s;
+}
+
+@keyframes logo {
+  1% {
+    background: rgb(229, 52, 52);
+    background: -moz-radial-gradient(circle, rgb(229, 52, 52) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-radial-gradient(circle, rgb(229, 52, 52) 0%, rgb(0, 0, 0) 100%);
+    background: radial-gradient(circle, rgb(229, 52, 52) 0%, rgb(0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e53434",endColorstr="#000000",GradientType=1);
+  }
+  80% {
+    transform: translateX(30px);
+  }
+}
+/*estilos para el main-index*/
 @media (max-width: 575px) {
   .div1 {
     height: 50px;
@@ -57,6 +77,10 @@ body {
   }
 }
 
+#main-index {
+  background: url(/img/fondo.jpg);
+  background-size: cover;
+}
 @media (max-width: 575px) {
   #main-index section {
     flex-direction: column;
@@ -123,6 +147,19 @@ body {
   background-color: rgb(251, 158, 158);
   margin: 40 0 0 0;
 }
+@media (max-width: 575px) {
+  #main-index aside {
+    margin: 20px;
+  }
+}
+#main-index aside p {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  #main-index aside p {
+    font-size: 15px;
+  }
+}
 #main-index #div-mobile {
   display: none;
 }
@@ -137,14 +174,22 @@ body {
   }
 }
 
-.card-div {
+.card-div1 {
+  background: rgb(180, 58, 58);
+  background: -moz-linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 57%);
+  background: -webkit-linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 57%);
+  background: linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 57%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43a3a",endColorstr="#000000",GradientType=1);
+}
+
+.card-div2 {
   background-color: white;
   height: 100px;
 }
 
 .cardbutton {
   background-color: rgb(153, 87, 181);
-  align-items: center;
+  justify-self: center;
 }
 
 /*estilos para el footer index*/
@@ -202,6 +247,11 @@ footer .div-footer2 {
 }
 
 /*estilos para main-hombre*/
+#main-hombre {
+  background: url(/img/fondo.jpg);
+  background-size: cover;
+}
+
 @media (max-width: 575px) {
   .div1 {
     height: 50px;
@@ -232,6 +282,12 @@ section .ul-hombre li {
   color: white;
   font-size: 35px;
 }
+section .ul-hombre li:hover {
+  transform: scale(1.5);
+  transition: all 1.8s;
+  background-color: rgb(255, 0, 0);
+  border: 1px black solid;
+}
 @media (max-width: 575px) {
   section .ul-hombre li {
     font-size: 30px;
@@ -252,7 +308,7 @@ section .ul-hombre li {
 }
 
 .div-hombre {
-  margin: 80px 0;
+  margin-top: 80px;
 }
 @media (max-width: 575px) {
   .div-hombre {
@@ -291,6 +347,18 @@ section .ul-hombre li {
   }
 }
 
+.backgroundcarousel {
+  background: rgb(180, 58, 58);
+  background: -moz-linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgb(180, 58, 58) 0%, rgb(0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43a3a",endColorstr="#000000",GradientType=1);
+}
+
+#main-remeras {
+  background: url(/img/fondo.jpg);
+  background-size: cover;
+}
 @media (max-width: 575px) {
   #main-remeras .div1 {
     height: 50px;
@@ -312,9 +380,27 @@ section .ul-hombre li {
   flex-wrap: wrap;
   gap: 100px;
 }
+@media (max-width: 575px) {
+  #main-remeras #div-remeras {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+@media (max-width: 575px) and (max-width: 575px) {
+  #main-remeras #div-remeras img {
+    height: 200px;
+    width: 150px;
+  }
+}
 #main-remeras div {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 575px) {
+  #main-remeras div img {
+    height: 200px;
+    width: 150px;
+  }
 }
 
 .bg-color {
@@ -324,8 +410,7 @@ section .ul-hombre li {
 /*aca empiezan las propiedades para productos destacados*/
 /*grilla para remeras*/
 #div-produ1 {
-  background-color: lightgreen;
-  margin: 50px 0;
+  background-color: rgb(0, 0, 0);
   height: 850px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -333,10 +418,29 @@ section .ul-hombre li {
   grid-template-areas: "remeras r1 r2" "remeras r3 r4";
   gap: 20px;
 }
+@media (max-width: 575px) {
+  #div-produ1 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 42% 43%;
+    grid-template-areas: "remeras remeras" "r1 r2" "r3 r4";
+    gap: 0;
+    height: 600px;
+  }
+  #div-produ1 img {
+    height: 200px;
+    width: 150px;
+  }
+}
 #div-produ1 .remeras {
+  color: white;
   font-size: 80px;
   border: red 4px solid;
   grid-area: remeras;
+}
+@media (max-width: 575px) {
+  #div-produ1 .remeras {
+    font-size: 30px;
+  }
 }
 #div-produ1 .r1 {
   grid-area: r1;
@@ -353,8 +457,7 @@ section .ul-hombre li {
 
 /*grilla para pantalones*/
 #div-produ2 {
-  background-color: rgb(172, 144, 238);
-  margin: 50px 0;
+  background-color: rgb(255, 0, 0);
   height: 850px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -362,11 +465,29 @@ section .ul-hombre li {
   grid-template-areas: "p1 p2 pantalones" "p3 p4 pantalones";
   gap: 20px;
 }
+@media (max-width: 575px) {
+  #div-produ2 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 42% 43%;
+    grid-template-areas: "pantalones pantalones" "p1 p2" "p3 p4";
+    gap: 0;
+    height: 600px;
+  }
+  #div-produ2 img {
+    height: 200px;
+    width: 150px;
+  }
+}
 #div-produ2 .pantalones {
   grid-area: pantalones;
-  color: red;
-  border: black 4px solid;
+  color: black;
+  border: white 4px solid;
   font-size: 80px;
+}
+@media (max-width: 575px) {
+  #div-produ2 .pantalones {
+    font-size: 30px;
+  }
 }
 #div-produ2 .pantalones .p1 {
   grid-area: p1;
@@ -383,8 +504,7 @@ section .ul-hombre li {
 
 /*grilla para shorts*/
 #div-produ3 {
-  background-color: rgb(128, 71, 69);
-  margin: 50px 0;
+  background-color: rgb(0, 0, 0);
   height: 850px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -392,10 +512,29 @@ section .ul-hombre li {
   grid-template-areas: "s1 shorts s2" "s3 shorts s4";
   gap: 20px;
 }
+@media (max-width: 575px) {
+  #div-produ3 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 42% 43%;
+    grid-template-areas: "shorts shorts" "s1 s2" "s3 s4";
+    gap: 0;
+    height: 600px;
+  }
+  #div-produ3 img {
+    height: 200px;
+    width: 150px;
+  }
+}
 #div-produ3 .shorts {
+  color: white;
   font-size: 80px;
-  border: blue 4px solid;
+  border: red 4px solid;
   grid-area: shorts;
+}
+@media (max-width: 575px) {
+  #div-produ3 .shorts {
+    font-size: 30px;
+  }
 }
 #div-produ3 .s1 {
   grid-area: s1;

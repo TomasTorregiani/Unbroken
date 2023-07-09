@@ -1,5 +1,6 @@
 #main-remeras{
-      
+        background: url(/img/fondo.jpg);
+        background-size: cover;
     .div1{
         @extend %DivPrincipal;
         @media (max-width: 575px){
@@ -21,11 +22,27 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: ($smaller*2);              
+            gap: ($smaller*2);   
+            @media (max-width: 575px){
+                justify-content: flex-start;
+                gap: 40px;
+                img{
+                    @media (max-width:575px){
+                        height: 200px;
+                        width: 150px;
+                    }
+                }
+            }           
         }
         div{
             display: flex;
             justify-content: space-evenly;
+            @media (max-width:575px){
+                img{
+                    height: 200px;
+                    width: 150px;
+                }
+            }
         }
        
 }        

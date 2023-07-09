@@ -1,7 +1,4 @@
 /*estilos para el main-index*/
-body{
-    background-size: cover;
-}
 .div1{
     @extend %DivPrincipal;
     @media (max-width: 575px){
@@ -16,6 +13,8 @@ body{
    }
 }
 #main-index{ 
+        background: url(/img/fondo.jpg);
+        background-size: cover;
         section{
            @extend %flexbetween;
             @media (max-width:575px){
@@ -78,6 +77,16 @@ body{
         aside{
             background-color: map-get($main-index , bg-color );
             margin: map-get($main-index, margin);
+            @media (max-width: 575px){
+                margin: 20px;
+            }
+            p{
+            font-size: $size2;
+            @media (max-width:575px){
+                font-size: nth($list-sizepx , 3);
+            }
+            }
+            
         }
         #div-mobile{
             display: none;            
@@ -92,12 +101,21 @@ body{
             }
         }
 }
-.card-div{
+.card-div1{
+    background: rgb(180,58,58);
+background: -moz-linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 57%);
+background: -webkit-linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 57%);
+background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(0,0,0,1) 57%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43a3a",endColorstr="#000000",GradientType=1);
+}
+.card-div2{
     background-color: white;
     height: 100px;
 }
 .cardbutton{
     background-color: rgb(153, 87, 181);
-    align-items: center;
+    justify-self: center;
 }    
+
+
 
