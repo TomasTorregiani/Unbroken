@@ -1,5 +1,5 @@
 #main-remeras{
-        background: url(/img/fondo.jpg);
+        background: nth($list-colors , 4);
         background-size: cover;
     .div1{
         @extend %DivPrincipal;

@@ -1,6 +1,6 @@
 /*estilos para main-hombre*/
 #main-hombre{ 
-    background: url(/img/fondo.jpg);
+    background: nth($list-colors , 4);
     background-size: cover;
 }
 .div1{
