@@ -1,12 +1,14 @@
 %DivPrincipal{
     height: map-get($main-index, height );
     background-color: nth($list-colors,3 );
-    margin-bottom: nth($list-sizepx, 3 );
+    margin-bottom: nth($list-sizepx, 1 );
 }
 
 %h2Principal{
     text-align: center;
     font-size: 50px;
+    font-family: 'Victor Mono', monospace;
+    font-weight: bold;
 }
 %flexbetween{
     display: flex;

@@ -4,7 +4,7 @@
     .div1{
         @extend %DivPrincipal;
         @media (max-width: 575px){
-            height: nth($list-sizepx, 10 );
+            height: nth($list-size, 2);
         }
         h2{
             @extend %h2Principal;
@@ -43,6 +43,7 @@
                     width: 150px;
                 }
             }
-        }
-       
+        }   h3{
+            color: white;
+        } 
 }        

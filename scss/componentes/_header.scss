@@ -5,18 +5,23 @@ header{
     top: 0;
     z-index: 1000;
     h1{
-       font-size: calc( $small / 2 );
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+       font-size: calc( $small / 1.5 );
+       font-family:'Victor Mono', monospace;
         &:first-letter{
         font-weight: bolder;
         color: red;
-       }     
-      
+       } 
+    a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 500px;
+    }   
     nav{
-       
-        height: ($smaller*2);
+        height: ($smaller*2);      
     }
 }
+}
+.links-reales{
+    color: blue;
 }
 .combinado:hover{
         transform: rotate(360deg);
@@ -35,5 +40,19 @@ header{
     }
     80%{
         transform: translateX(30px);
+    }
+}
+.a{
+    font-family: 'Tektur', cursive;
+}
+.button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    border: red 2px solid;
+    background-color: rgb(0, 0, 0);
+    &:hover{
+        background-color: red;
+        border: black 2px solid;
+        color: black;
     }
 }

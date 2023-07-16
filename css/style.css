@@ -1,12 +1,14 @@
 #main-remeras .div1, .div1 {
   height: 100px;
   background-color: #FA4845;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 #main-remeras .div1 h2, .div1 h2 {
   text-align: center;
   font-size: 50px;
+  font-family: "Victor Mono", monospace;
+  font-weight: bold;
 }
 
 #main-index section {
@@ -32,15 +34,23 @@ header {
   z-index: 1000;
 }
 header h1 {
-  font-size: 50px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 66.6666666667px;
+  font-family: "Victor Mono", monospace;
 }
 header h1:first-letter {
   font-weight: bolder;
   color: red;
 }
+header h1 a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 500px;
+}
 header h1 nav {
   height: 100px;
+}
+
+.links-reales {
+  color: blue;
 }
 
 .combinado:hover {
@@ -64,6 +74,22 @@ header h1 nav {
     transform: translateX(30px);
   }
 }
+.a {
+  font-family: "Tektur", cursive;
+}
+
+.button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: red;
+  border: red 2px solid;
+  background-color: rgb(0, 0, 0);
+}
+.button:hover {
+  background-color: red;
+  border: black 2px solid;
+  color: black;
+}
+
 /*estilos para el main-index*/
 @media (max-width: 575px) {
   .div1 {
@@ -146,10 +172,11 @@ header h1 nav {
 #main-index aside {
   background-color: rgb(251, 158, 158);
   margin: 40 0 0 0;
+  padding: 20px;
 }
 @media (max-width: 575px) {
   #main-index aside {
-    margin: 20px;
+    margin: 1px;
   }
 }
 #main-index aside p {
@@ -157,7 +184,7 @@ header h1 nav {
 }
 @media (max-width: 575px) {
   #main-index aside p {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 #main-index #div-mobile {
@@ -189,7 +216,11 @@ header h1 nav {
 
 .cardbutton {
   background-color: rgb(153, 87, 181);
-  justify-self: center;
+}
+.cardbutton:hover {
+  background-color: white;
+  color: rgb(241, 17, 241);
+  border: violet 1px solid;
 }
 
 /*estilos para el footer index*/
@@ -254,12 +285,12 @@ footer .div-footer2 {
 
 @media (max-width: 575px) {
   .div1 {
-    height: 50px;
+    height: 50%;
   }
 }
 @media (max-width: 575px) {
   .div1 h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0;
   }
 }
@@ -269,7 +300,8 @@ footer .div-footer2 {
 }
 @media (max-width: 575px) {
   #div2 .font-white {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 20px;
   }
 }
 
@@ -308,7 +340,7 @@ section .ul-hombre li:hover {
 }
 
 .div-hombre {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 @media (max-width: 575px) {
   .div-hombre {
@@ -328,6 +360,16 @@ section .ul-hombre li:hover {
   }
 }
 
+.p-carousel {
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
+
+.h3-color {
+  color: white;
+}
+
 .div-hombre-mobile {
   display: none;
 }
@@ -335,6 +377,7 @@ section .ul-hombre li:hover {
   .div-hombre-mobile {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
   }
 }
 
@@ -361,7 +404,7 @@ section .ul-hombre li:hover {
 }
 @media (max-width: 575px) {
   #main-remeras .div1 {
-    height: 50px;
+    height: 50%;
   }
 }
 @media (max-width: 575px) {
@@ -401,6 +444,9 @@ section .ul-hombre li:hover {
     height: 200px;
     width: 150px;
   }
+}
+#main-remeras h3 {
+  color: white;
 }
 
 .bg-color {
@@ -561,6 +607,11 @@ section .ul-hombre li:hover {
   font-size: 35px;
   text-align: center;
 }
+@media (max-width: 575px) {
+  .divform {
+    height: 700px;
+  }
+}
 
 .displayflex {
   display: flex;
@@ -568,6 +619,14 @@ section .ul-hombre li:hover {
   align-items: center;
 }
 
+#p-preguntas div {
+  padding-left: 10px;
+}
+@media (max-width: 575px) {
+  #p-preguntas div {
+    padding: 20px;
+  }
+}
 #p-preguntas div p {
   font-size: 25px;
 }
